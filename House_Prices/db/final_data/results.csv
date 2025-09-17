@@ -1,0 +1,16 @@
+type,model_name,model,score,rmse,r2,mae
+no_pca,linear,LinearRegression(),-0.14443536517201644,50186.073035590205,0.46678669675921114,16956.338684559196
+no_pca,tree,"DecisionTreeRegressor(max_depth=12, max_features=0.8, min_samples_leaf=8,
+                      random_state=42)",-0.18445805738065021,35156.46798195155,0.7383353701887223,23348.808153157013
+no_pca,random_forest,"RandomForestRegressor(max_depth=15, max_features=0.7, min_samples_leaf=2,
+                      n_estimators=500, random_state=42)",-0.14019759388811498,28656.34932700268,0.8261493683512817,15649.853055690433
+no_pca,svr,"SVR(C=1, epsilon=0.01, gamma='auto', max_iter=10000)",-0.12220117880149603,33344.44260829464,0.7646135431622882,13862.371282418184
+no_pca,neural_network,"MLPRegressor(activation='tanh', alpha=0.001, hidden_layer_sizes=(100, 100),
+             learning_rate_init=0.01, max_iter=10000, random_state=42)",-0.13273366804987308,32710.07350573902,0.7734846760556356,16949.484775055822
+pca,linear,LinearRegression(),-0.15069575370815463,36168.44502992988,0.723054557194141,17618.65164668709
+pca,tree,"DecisionTreeRegressor(max_depth=8, max_features=1.0, min_samples_leaf=4,
+                      min_samples_split=20, random_state=42)",-0.19060665828422702,42601.985855272214,0.615767377261841,26001.416521960768
+pca,random_forest,"RandomForestRegressor(max_features=0.7, min_samples_split=5, random_state=42)",-0.15061437556215243,27769.47334910183,0.8367437432962015,17983.695676232885
+pca,svr,"SVR(C=1, epsilon=0.01, gamma=0.01, max_iter=10000)",-0.13610484372708803,28033.056076636833,0.8336298381412606,14859.81575022382
+pca,neural_network,"MLPRegressor(activation='tanh', alpha=0.1, hidden_layer_sizes=(50, 50),
+             learning_rate_init=0.05, max_iter=10000, random_state=42)",-0.15352115615772144,29786.249441912085,0.8121694665805327,16482.792713999796

@@ -1,0 +1,18 @@
+type,model_name,model,score
+no_pca,linear,LinearRegression(),-0.14531634778692573
+no_pca,tree,"DecisionTreeRegressor(max_depth=15, max_features=0.8, min_samples_leaf=4,
+                      min_samples_split=20, random_state=42)",-0.17594270023756348
+no_pca,random_forest,"RandomForestRegressor(bootstrap=False, max_depth=15, max_features='sqrt',
+                      n_estimators=500, random_state=42)",-0.13361297903692784
+no_pca,svr,"SVR(C=1, epsilon=0.01, gamma='auto', max_iter=10000)",-0.12000224462606375
+no_pca,neural_network,"MLPRegressor(activation='tanh', alpha=0.1, hidden_layer_sizes=(100, 100),
+             learning_rate='adaptive', learning_rate_init=0.01, max_iter=10000,
+             random_state=42, solver='sgd')",-0.12337742046877491
+pca,linear,LinearRegression(),-0.14667959294471453
+pca,tree,"DecisionTreeRegressor(max_depth=12, max_features=0.8, min_samples_leaf=8,
+                      random_state=42)",-0.18128862676974827
+pca,random_forest,"RandomForestRegressor(max_features=0.7, min_samples_leaf=2, n_estimators=200,
+                      random_state=42)",-0.14565384117063995
+pca,svr,"SVR(C=1, epsilon=0.01, gamma=0.01, max_iter=10000)",-0.1331707378646954
+pca,neural_network,"MLPRegressor(activation='tanh', alpha=0.1, hidden_layer_sizes=(100, 50),
+             learning_rate_init=0.05, max_iter=10000, random_state=42)",-0.14543648341093773
